@@ -68,3 +68,10 @@ on_ft = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
 hook_add = '''
 source ~/.config/nvim/plugins/prettier.vim
 '''
+
+[[plugins]]
+repo = 'lambdalisue/fern.vim'
+hook_add = '''
+source ~/.config/nvim/plugins/fern.vim
+'''
+
