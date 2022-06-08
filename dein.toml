@@ -57,21 +57,27 @@ source ~/.config/nvim/plugins/anzu.vim
 repo = "neoclide/coc.nvim"
 merge = 0
 rev = "release"
-hook_add = """
-source ~/.config/nvim/plugins/coc.vim
-"""
 
 [[plugins]]
-repo = 'prettier/vim-prettier'
-build = 'npm install'
-on_ft = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
-hook_add = '''
-source ~/.config/nvim/plugins/prettier.vim
-'''
-
-[[plugins]]
+# fileTree
 repo = 'lambdalisue/fern.vim'
 hook_add = '''
 source ~/.config/nvim/plugins/fern.vim
 '''
+
+[[plugins]]
+# fileTreeIconColor
+repo = 'lambdalisue/glyph-palette.vim'
+
+[[plugins]]
+# fileTreeGitStatus
+repo = 'lambdalisue/fern-git-status.vim'
+
+[[plugins]]
+# fileTreeIconFont
+repo = 'lambdalisue/nerdfont.vim'
+
+[[plugins]]
+# fileTreeIconRendering
+repo = 'lambdalisue/fern-renderer-nerdfont.vim'
 
