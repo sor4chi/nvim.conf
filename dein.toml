@@ -1,0 +1,70 @@
+[[plugins]]
+# 拡張管理
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+# ifやdoなどブロックの自動補完
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+# 閉じ括弧などの自動補完
+repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+# Color Scheme
+repo = 'w0ng/vim-hybrid'
+hook_add = '''
+source ~/.config/nvim/plugins/hybrid.vim
+'''
+
+[[plugins]]
+# 非同期のsyntaxチェック
+repo = 'w0rp/ale'
+hook_add = """
+source ~/.config/nvim/plugins/ale.vim
+"""
+
+[[plugins]]
+# gitの行変更ステータスをわかりやすく
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+source ~/.config/nvim/plugins/gitgutter.vim
+'''
+
+[[plugins]]
+# vimからgitを呼ぶための設定
+repo = 'tpope/vim-fugitive'
+hook_add = '''
+source ~/.config/nvim/plugins/fugitive.vim
+'''
+
+[[plugins]]
+# ファイル検索など
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+source ~/.config/nvim/plugins/denite.vim
+'''
+
+[[plugins]]
+# 検索した時の結果数や何番目かなど
+repo = 'osyo-manga/vim-anzu'
+hook_add = '''
+source ~/.config/nvim/plugins/anzu.vim
+'''
+
+[[plugins]]
+# インテリセンス
+repo = "neoclide/coc.nvim"
+merge = 0
+rev = "release"
+hook_add = """
+source ~/.config/nvim/plugins/coc.vim
+"""
+
+[[plugins]]
+repo = 'prettier/vim-prettier'
+build = 'npm install'
+on_ft = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
+hook_add = '''
+source ~/.config/nvim/plugins/prettier.vim
+'''
