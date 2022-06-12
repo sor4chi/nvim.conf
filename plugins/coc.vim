@@ -4,3 +4,5 @@ let g:coc_global_extensions = [
   \ 'coc-prettier',
   \ 'coc-eslint',
   \ ]
+
+command! -nargs=0 Format :call CocAction('format')
