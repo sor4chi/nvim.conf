@@ -12,9 +12,10 @@ repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 # Color Scheme
-repo = 'w0ng/vim-hybrid'
+# repo = 'w0ng/vim-hybrid'
+repo = 'cocopon/iceberg.vim'
 hook_add = '''
-source ~/.config/nvim/plugins/hybrid.vim
+source ~/.config/nvim/plugins/colorscheme.vim
 '''
 
 [[plugins]]
@@ -99,3 +100,31 @@ repo = 'vim-airline/vim-airline-themes'
 [[plugins]]
 # airline's icon
 repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+# telescope.nvim's dependency
+repo = 'nvim-lua/plenary.nvim'
+
+
+[[plugins]]
+# telescope.nvim
+depends = ['airblade/vim-rooter']
+hook_add = '''
+source ~/.config/nvim/plugins/telescope.vim
+'''
+repo = 'nvim-telescope/telescope.nvim'
+
+[[plugins]]
+# telescope-frecency's dependency
+repo = 'tami5/sqlite.lua'
+
+[[plugins]]
+# telescope-frecency's dependency
+repo = 'kyazdani42/nvim-web-devicons'
+
+[[plugins]]
+# telescope-frecency
+hook_add = '''
+source ~/.config/nvim/plugins/telescope-frecency.vim
+'''
+repo = 'nvim-telescope/telescope-frecency.nvim'
