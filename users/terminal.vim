@@ -4,4 +4,6 @@ command! -nargs=* VT vsplit | wincmd j | terminal <args>
 
 autocmd TermOpen * startinsert
 autocmd TermOpen * setlocal nonumber norelativenumber
+autocmd BufEnter * silent! lcd %:p:h
+
 

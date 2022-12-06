@@ -1,9 +1,17 @@
 {
+  "semanticTokens.enable": true,
   "suggest.noselect": true,
   "suggest.preferCompleteThanJumpPlaceholder": true,
-  "coc.preferences.formatOnSaveFiletypes": ["json", "css", "markdown"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "json",
+    "css",
+    "markdown",
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact"
+  ],
   "eslint.autoFixOnSave": true,
-  "eslint.autoFix": true,
   "tsserver.enableJavascript": false,
   "languageserver": {
     "clangd": {
@@ -17,6 +25,33 @@
         ".hg/"
       ],
       "filetypes": ["c", "cpp", "objc", "objcpp"]
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [
+        ".ccls-root",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        },
+        "clang": {
+          "resourceDir": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include",
+          "extraArgs": [
+            "-isystem/usr/local/include",
+            "-isystem/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+            "-isystem/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include",
+            "-isystem/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",
+            "-isystem/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+            "-isystem/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+          ]
+        }
+      }
     },
     "dockerfile": {
       "command": "docker-langserver",
@@ -32,15 +67,6 @@
           "hlintOn": true
         }
       }
-    },
-    "flow": {
-      "command": "flow",
-      "args": ["lsp"],
-      "filetypes": ["javascript", "javascriptreact"],
-      "initializationOptions": {},
-      "requireRootPattern": true,
-      "settings": {},
-      "rootPatterns": [".flowconfig"]
     }
   },
   "python.jediEnabled": false

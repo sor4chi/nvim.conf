@@ -33,3 +33,4 @@ syntax enable
 
 "user defined
 source ~/.config/nvim/users/terminal.vim
+source ~/.config/nvim/users/keybind.vim

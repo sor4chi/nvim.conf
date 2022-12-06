@@ -12,9 +12,11 @@ repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 # Color Scheme
-repo = 'w0ng/vim-hybrid'
+# repo = 'joshdick/onedark.vim'
+# repo = 'w0ng/vim-hybrid'
+repo = 'cocopon/iceberg.vim'
 hook_add = '''
-source ~/.config/nvim/plugins/hybrid.vim
+source ~/.config/nvim/plugins/colorscheme.vim
 '''
 
 [[plugins]]
