@@ -34,13 +34,6 @@ source ~/.config/nvim/plugins/fugitive.vim
 '''
 
 [[plugins]]
-# ファイル検索など
-repo = 'Shougo/denite.nvim'
-hook_add = '''
-source ~/.config/nvim/plugins/denite.vim
-'''
-
-[[plugins]]
 # 検索した時の結果数や何番目かなど
 repo = 'osyo-manga/vim-anzu'
 hook_add = '''
@@ -129,3 +122,12 @@ hook_add = '''
 source ~/.config/nvim/plugins/telescope-frecency.vim
 '''
 repo = 'nvim-telescope/telescope-frecency.nvim'
+
+[[plugins]]
+repo = 'cljoly/telescope-repo.nvim'
+
+[[plugins]]
+hook_add = """
+source ~/.config/nvim/plugins/quickrun.vim
+"""
+repo = 'thinca/vim-quickrun'

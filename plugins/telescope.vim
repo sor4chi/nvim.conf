@@ -1,6 +1,6 @@
 " Search for Project root
 " Find files using Telescope command-line sugar.
-nnoremap <C-p> <cmd>Telescope find_files hidden=true<CR>
+nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-g> <cmd>Telescope live_grep<cr>
 " プロジェクトルートではなく現在開いているファイルを起点にファイル検索
 nnoremap <M-p> <cmd>lua require('telescope.builtin').find_files( { cwd = vim.fn.expand('%:p:h') })<cr>
