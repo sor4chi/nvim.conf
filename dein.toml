@@ -6,9 +6,9 @@ repo = 'Shougo/dein.vim'
 # ifやdoなどブロックの自動補完
 repo = 'tpope/vim-endwise'
 
-[[plugins]]
+# [[plugins]]
 # 閉じ括弧などの自動補完
-repo = 'Townk/vim-autoclose'
+# repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 # Color Scheme
