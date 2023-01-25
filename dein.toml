@@ -34,13 +34,6 @@ source ~/.config/nvim/plugins/fugitive.vim
 '''
 
 [[plugins]]
-# ファイル検索など
-repo = 'Shougo/denite.nvim'
-hook_add = '''
-source ~/.config/nvim/plugins/denite.vim
-'''
-
-[[plugins]]
 # 検索した時の結果数や何番目かなど
 repo = 'osyo-manga/vim-anzu'
 hook_add = '''
@@ -152,3 +145,9 @@ repo = 'vim-denops/denops.vim'
 
 [[plugins]]
 repo = 'skanehira/denops-twihi.vim'
+
+[[plugins]]
+hook_add = """
+source ~/.config/nvim/plugins/quickrun.vim
+"""
+repo = 'thinca/vim-quickrun'
