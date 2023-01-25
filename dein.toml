@@ -129,3 +129,26 @@ hook_add = '''
 source ~/.config/nvim/plugins/telescope-frecency.vim
 '''
 repo = 'nvim-telescope/telescope-frecency.nvim'
+
+[[plugins]]
+# rust.vim
+repo = 'rust-lang/rust.vim'
+
+[[plugins]]
+# my snippet, depends on neosnippet-snippet
+repo = 'Shougo/neosnippet.vim'
+hook_add = '''
+source ~/.config/nvim/plugins/neosnippet.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'Shougo/neocomplcache'
+
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+
+[[plugins]]
+repo = 'skanehira/denops-twihi.vim'

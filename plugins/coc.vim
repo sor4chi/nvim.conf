@@ -8,6 +8,7 @@ let g:coc_global_extensions = [
   \ 'coc-java',
   \ 'coc-rust-analyzer',
   \ '@yaegassy/coc-volar',
+  \ 'coc-neosnippet',
   \ ]
 
 command! -nargs=0 Format :call CocAction('format')
