@@ -2,6 +2,8 @@
 " Find files using Telescope command-line sugar.
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-g> <cmd>Telescope live_grep<cr>
+nnoremap <C-f> <cmd>Telescope git_files<cr>
+nnoremap <C-s> <cmd>Telescope git_status<cr>
 " プロジェクトルートではなく現在開いているファイルを起点にファイル検索
 nnoremap <M-p> <cmd>lua require('telescope.builtin').find_files( { cwd = vim.fn.expand('%:p:h') })<cr>
 nnoremap <M-g> <cmd>lua require('telescope.builtin').live_grep( { cwd = vim.fn.expand('%:p:h') })<cr>

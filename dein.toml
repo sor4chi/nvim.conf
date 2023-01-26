@@ -2,8 +2,7 @@
 # 拡張管理
 repo = 'Shougo/dein.vim'
 
-[[plugins]]
-# ifやdoなどブロックの自動補完
+[[plugins]] # ifやdoなどブロックの自動補完
 repo = 'tpope/vim-endwise'
 
 # [[plugins]]
@@ -96,6 +95,10 @@ repo = 'vim-airline/vim-airline-themes'
 repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
+# airline's iceberg theme
+repo = 'gkeep/iceberg-dark'
+
+[[plugins]]
 # telescope.nvim's dependency
 repo = 'nvim-lua/plenary.nvim'
 
@@ -139,12 +142,6 @@ repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
 repo = 'Shougo/neocomplcache'
-
-[[plugins]]
-repo = 'vim-denops/denops.vim'
-
-[[plugins]]
-repo = 'skanehira/denops-twihi.vim'
 
 [[plugins]]
 hook_add = """
