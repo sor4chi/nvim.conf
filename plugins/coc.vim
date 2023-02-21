@@ -6,7 +6,9 @@ let g:coc_global_extensions = [
   \ 'coc-go',
   \ 'coc-clangd',
   \ 'coc-java',
+  \ 'coc-jedi',
   \ 'coc-rust-analyzer',
+  \ 'coc-ltex',
   \ '@yaegassy/coc-volar',
   \ 'coc-neosnippet',
   \ ]
@@ -18,6 +20,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+let g:coc_filetype_map = {'tex': 'latex'}
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
