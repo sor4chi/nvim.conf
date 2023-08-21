@@ -148,3 +148,7 @@ hook_add = """
 source ~/.config/nvim/plugins/quickrun.vim
 """
 repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+repo = 'github/copilot.vim'
+
