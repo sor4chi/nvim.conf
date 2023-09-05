@@ -13,6 +13,7 @@ set pumblend=10
 
 "dein.vim conf
 let g:python3_host_prog = system('echo -n $(which python3)')
+let g:dein#auto_recache = 1
 
 if &compatible
   set nocompatible

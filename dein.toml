@@ -42,7 +42,7 @@ source ~/.config/nvim/plugins/anzu.vim
 [[plugins]]
 # インテリセンス
 repo = "neoclide/coc.nvim"
-merge = 0
+merged = 0
 rev = "release"
 hook_add = '''
 source ~/.config/nvim/plugins/coc.vim
@@ -151,4 +151,3 @@ repo = 'thinca/vim-quickrun'
 
 [[plugins]]
 repo = 'github/copilot.vim'
-
