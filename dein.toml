@@ -151,3 +151,10 @@ repo = 'thinca/vim-quickrun'
 
 [[plugins]]
 repo = 'github/copilot.vim'
+
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+
+[[plugins]]
+# Complete plugin
+repo = 'Shougo/ddc.vim'
